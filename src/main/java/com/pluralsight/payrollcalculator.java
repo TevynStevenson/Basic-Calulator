@@ -15,8 +15,17 @@ public class payrollcalculator {
         //Ask user to enter their hours worked
         System.out.println("How many hours have you worked");
 
-        //Change scanner to Integer
+        //Change scanner to Double
         double hoursWorked = payrollCalculator.nextDouble();
+
+        // Ask user to enter their pay rate
+        System.out.println("What is your pay rate");
+        double payRate = payrollCalculator.nextDouble();
+
+        //Print employees name and payrate
+        System.out.println(name + ' ' + "Total Gross Pay" + ' ' + "=" + ' ' +  hoursWorked * payRate);
+
+
 
 
 
