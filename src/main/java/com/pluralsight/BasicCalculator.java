@@ -14,18 +14,35 @@ public class BasicCalculator {
 
 
         //store the answer from the user
-
+        int firstNumber = myScanner.nextInt();
 
         //ask the user for the second number
+        System.out.println("What is your second number");
 
 
-        // we need to ask the user what operation they want to perform
+        // store the answer for the second number
+        int secondNumber = myScanner.nextInt();
+
+        // pulls enter key press or the LF out of the buffer so it stops at the next readLine
+        myScanner.nextLine();
 
 
-        //store the answer to what operator
+        //ask the user what calculation theyre about to perform
+        System.out.println("""
+                Possible calculations:
+                (A)dd
+                (S)ubtract
+                (M)ultiply
+                (D)ivide
+                Please select an option
+                """);
 
 
         // multiply the first and second number and display the result
+        String operation = myScanner.nextLine();
+
+        //Answer the equation
+        System.out.println("Your answer is" + ' ' + firstNumber * secondNumber);
 
 
 
