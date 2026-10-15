@@ -6,11 +6,11 @@ public class BasicCalculator {
     public static void main(String[] args) {
 
         //import the scanner
-
+        Scanner myScanner = new Scanner(System.in);
 
 
         //ask the user first number
-
+        System.out.println("What is your first number");
 
 
         //store the answer from the user
