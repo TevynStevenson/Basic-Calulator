@@ -27,7 +27,7 @@ public class payrollcalculator {
 
         //Add if statement
         if (hoursWorked > 40) {
-            System.out.println(name + "Has Qualified For Overtime" + """
+            System.out.println(name + ' ' + "Has Qualified For" + ' ' + """
                     Overtime Pay = Gross Pay * 1.5""");
             System.out.println(name + "'" + "s" + ' ' + "Total Gross Pay" + ' ' + "=" + ' ' + "$" + hoursWorked * payRate * 1.5);
         }
