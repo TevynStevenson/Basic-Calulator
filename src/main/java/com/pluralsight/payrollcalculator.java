@@ -23,11 +23,13 @@ public class payrollcalculator {
         double payRate = payrollCalculator.nextDouble();
 
         //Print employees name and payrate
-        System.out.println(name + ' ' + "Total Gross Pay" + ' ' + "=" + ' ' +  hoursWorked * payRate);
+        System.out.println(name + "'" + "s" + ' ' + "Total Gross Pay" + ' ' + "=" + ' ' + "$" + hoursWorked * payRate);
 
+        //Add if statement
+        if (hoursWorked > 40) {
+            System.out.println(name + "Has Qualified For Overtime" + """
+                    Overtime Pay = Gross Pay * 1.5""");
+            System.out.println(name + "'" + "s" + ' ' + "Total Gross Pay" + ' ' + "=" + ' ' + "$" + hoursWorked * payRate * 1.5);
+        }
 
-
-
-
-    }
-}
+    }}
