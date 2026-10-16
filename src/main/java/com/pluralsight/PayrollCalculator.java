@@ -2,14 +2,14 @@ package com.pluralsight;
 
 import java.util.Scanner;
 
-public class payrollcalculator {
+public class PayrollCalculator {
     public static void main(String[] args) {
 
         //Import the scanner for the calculator
         Scanner payrollCalculator = new Scanner(System.in);
 
         // Ask user to enter their name
-        System.out.printf("Enter your name");
+        System.out.println("Enter your name");
         String name = payrollCalculator.nextLine();
 
         //Ask user to enter their hours worked
